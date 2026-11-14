@@ -1,5 +1,6 @@
 /* =====================================
    GradeWise - simple stylesheet
+   Font: Poppins (backup: Arial)
    ===================================== */
 
 /* ---------- General settings ---------- */
@@ -10,10 +11,16 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Poppins, Arial, sans-serif;
   background-color: #f4f6fb;
   color: #333333;
   line-height: 1.6;
+}
+
+/* makes buttons and inputs use the same font as the page */
+button,
+input {
+  font-family: Poppins, Arial, sans-serif;
 }
 
 a {
@@ -57,12 +64,18 @@ ul {
   color: #f59e0b;
 }
 
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
 .nav-links a {
   color: #cbd5e1;
   padding: 8px 16px;
   border-radius: 20px;
-  margin-left: 5px;
   display: inline-block;
+  font-size: 15px;
 }
 
 .nav-links a:hover {
@@ -94,6 +107,7 @@ ul {
 
 .hero h1 {
   font-size: 48px;
+  line-height: 1.2;
   margin-bottom: 15px;
 }
 
@@ -160,6 +174,7 @@ ul {
 
 .page-header h1 {
   font-size: 38px;
+  line-height: 1.2;
   margin-bottom: 10px;
 }
 
@@ -284,6 +299,7 @@ section {
   padding-top: 40px;
 }
 
+/* lets the table slide left and right on small screens */
 .table-wrap {
   background-color: white;
   border-radius: 15px;
@@ -434,6 +450,7 @@ tr:hover td {
 
 .course-row input {
   flex: 1;
+  min-width: 0;
 }
 
 input {
@@ -485,26 +502,178 @@ footer strong {
   color: white;
 }
 
-/* ---------- Small screens (phones) ---------- */
-@media (max-width: 600px) {
+/* =====================================
+   RESPONSIVE (tablets and phones)
+   ===================================== */
+
+/* ---------- Tablets (900px and below) ---------- */
+@media (max-width: 900px) {
+  .hero {
+    padding: 80px 0;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .page-header {
+    padding: 55px 0;
+  }
+
+  .page-header h1 {
+    font-size: 32px;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  .section-title h2 {
+    font-size: 26px;
+  }
+}
+
+/* ---------- Big phones (650px and below) ---------- */
+@media (max-width: 650px) {
+  /* navbar: logo on top, links under it */
+  .navbar {
+    position: static;
+  }
+
   .nav-inner {
-    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .nav-links {
-    margin-top: 10px;
-    text-align: center;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    padding: 7px 13px;
+    font-size: 14px;
+  }
+
+  /* welcome page */
+  .hero {
+    padding: 60px 0;
   }
 
   .hero h1 {
     font-size: 32px;
   }
 
-  .btn-outline {
-    margin: 10px 0 0 0;
+  .hero p {
+    font-size: 16px;
+  }
+
+  /* buttons sit one under the other */
+  .hero .btn {
+    display: block;
+    max-width: 280px;
+    margin: 0 auto 12px auto;
+  }
+
+  .hero .btn-outline {
+    margin: 0 auto;
+  }
+
+  /* inner page header */
+  .page-header {
+    padding: 45px 0;
+  }
+
+  .page-header h1 {
+    font-size: 26px;
+  }
+
+  .page-header p {
+    font-size: 15px;
+  }
+
+  /* cards take the full width */
+  .cards {
+    padding-top: 35px;
+    gap: 20px;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+
+  /* two award boxes in one row */
+  .honours {
+    gap: 12px;
+  }
+
+  .honour {
+    flex: 1 1 140px;
+    padding: 18px 10px;
+  }
+
+  .honour .range {
+    font-size: 18px;
+  }
+
+  /* smaller table so it fits better */
+  th,
+  td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .grade {
+    min-width: 36px;
+    padding: 3px 8px;
+  }
+
+  /* calculator */
+  .calculator {
+    padding: 20px;
   }
 
   .course-row {
     flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+
+  .calc-actions .btn {
+    display: block;
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .result-box .big {
+    font-size: 30px;
+  }
+}
+
+/* ---------- Small phones (400px and below) ---------- */
+@media (max-width: 400px) {
+  .logo {
+    font-size: 22px;
+  }
+
+  .hero h1 {
+    font-size: 27px;
+  }
+
+  .page-header h1 {
+    font-size: 23px;
+  }
+
+  .section-title h2 {
+    font-size: 22px;
+  }
+
+  .honour {
+    flex: 1 1 100%;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    font-size: 13px;
   }
 }
