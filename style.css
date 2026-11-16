@@ -493,19 +493,22 @@ tr:hover td {
 }
 
 .result-box .big {
-    font-size: 32px;
+    font-size: 20px;
     font-weight: bold;
     color: #4f46e5;
 }
 
 #secondary-result,
-#university-result {
+#university-result,
+#poly-result {
     display: none;
 }
 
 #secondary-result-text {
     white-space: pre-line;
 }
+
+
 
 /* ---------- Footer ---------- */
 footer {
