@@ -1,8 +1,3 @@
-/* =====================================
-   GradeWise - simple stylesheet
-   Font: Poppins (backup: Arial)
-   ===================================== */
-
 /* ---------- General settings ---------- */
 * {
   margin: 0;
@@ -468,6 +463,8 @@ input:focus {
 
 .calc-actions {
   margin-top: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .result-box {
@@ -502,9 +499,13 @@ footer strong {
   color: white;
 }
 
-/* =====================================
-   RESPONSIVE (tablets and phones)
-   ===================================== */
+#secondary-result {
+  display: none;
+}
+
+#secondary-result-text {
+  white-space: pre-line;
+}
 
 /* ---------- Tablets (900px and below) ---------- */
 @media (max-width: 900px) {

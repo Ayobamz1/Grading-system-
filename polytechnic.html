@@ -94,44 +94,54 @@
     </section>
 
     <!-- CALCULATOR -->
-    <section>
-      <div class="section-title">
+    <!-- CALCULATOR -->
+<section>
+    <div class="section-title">
         <h2>GPA Calculator</h2>
         <p>Enter your courses, credit units and scores.</p>
-      </div>
+    </div>
 
-      <div class="calculator">
+    <div class="calculator">
         <h3>Calculate Your GPA</h3>
-        <p>Add all the courses you took this semester.</p>
+        <p>Enter two courses you took this semester.</p>
 
         <form id="poly-form">
-          <div id="poly-courses-container">
-            <div class="course-row">
-              <input type="text" class="course-name" placeholder="Course (e.g. COM111)">
-              <input type="number" class="course-unit" placeholder="Credit Unit" min="1" max="6">
-              <input type="number" class="course-score" placeholder="Score (0 - 100)" min="0" max="100">
-            </div>
-          </div>
+            <div id="poly-courses-container">
 
-          <div class="calc-actions">
-            <button type="button" id="add-poly-course-btn" class="btn btn-light">+ Add Course</button>
-            <button type="button" id="calculate-poly-gpa-btn" class="btn btn-dark">Calculate GPA</button>
-          </div>
+                <div class="course-row">
+                    <input type="text" id="course-name-1" placeholder="Course 1 (e.g. COM111)">
+                    <input type="number" id="course-unit-1" placeholder="Credit Unit" min="1" max="6">
+                    <input type="number" id="course-score-1" placeholder="Score (0 - 100)" min="0" max="100">
+                </div>
+
+                <div class="course-row">
+                    <input type="text" id="course-name-2" placeholder="Course 2 (e.g. COM112)">
+                    <input type="number" id="course-unit-2" placeholder="Credit Unit" min="1" max="6">
+                    <input type="number" id="course-score-2" placeholder="Score (0 - 100)" min="0" max="100">
+                </div>
+
+            </div>
+
+            <div class="calc-actions">
+                <button type="button" id="calculate-poly-gpa-btn" class="btn btn-dark">
+                    Calculate GPA
+                </button>
+            </div>
         </form>
 
         <div class="result-box" id="poly-result">
-          <h4>Your GPA</h4>
-          <div class="big" id="poly-gpa">--</div>
-          <p id="poly-class">Award class will show here</p>
+            <h4>Your GPA</h4>
+            <div class="big" id="poly-gpa">--</div>
+            <p id="poly-class">Award class will show here</p>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2026 <strong>GradeWise</strong> &bull; School Grading System Project</p>
+      <p>2026 <strong>GradeWise</strong> School Grading System Project</p>
     </div>
   </footer>
 
