@@ -507,6 +507,11 @@ footer strong {
   white-space: pre-line;
 }
 
+#university-result {
+  display: none;
+}
+
+
 /* ---------- Tablets (900px and below) ---------- */
 @media (max-width: 900px) {
   .hero {
