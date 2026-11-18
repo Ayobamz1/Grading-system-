@@ -250,7 +250,6 @@ section {
     border-top-color: #f59e0b;
 }
 
-/* ---------- Feature boxes ---------- */
 .features {
     display: flex;
     flex-wrap: wrap;
@@ -280,7 +279,6 @@ section {
     color: #6b7280;
 }
 
-/* ---------- Grading tables ---------- */
 .table-wrap {
     background-color: white;
     border-radius: 15px;
