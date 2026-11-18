@@ -180,7 +180,6 @@ a {
     background: linear-gradient(135deg, #b45309, #f59e0b);
 }
 
-/* ---------- Sections ---------- */
 section {
     padding: 50px 0;
 }
@@ -203,7 +202,6 @@ section {
     color: #6b7280;
 }
 
-/* ---------- Cards ---------- */
 .cards {
     display: flex;
     flex-wrap: wrap;
