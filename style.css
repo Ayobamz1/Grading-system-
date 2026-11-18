@@ -337,7 +337,6 @@ tr:hover td {
     background-color: #ef4444;
 }
 
-/* ---------- Degree and award classes ---------- */
 .honours {
     display: flex;
     flex-wrap: wrap;
@@ -384,7 +383,6 @@ tr:hover td {
     border-bottom-color: #fb923c;
 }
 
-/* ---------- Note box ---------- */
 .note {
     background-color: #fff8e6;
     border-left: 5px solid #f59e0b;
@@ -394,7 +392,6 @@ tr:hover td {
     color: #6b4a00;
 }
 
-/* ---------- Calculator ---------- */
 .calculator {
     background-color: white;
     border-radius: 15px;
