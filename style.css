@@ -413,7 +413,6 @@ tr:hover td {
     text-align: center;
 }
 
-/* Calculator input */
 .calculator input {
     width: 100%;
     padding: 14px;
@@ -428,7 +427,6 @@ tr:hover td {
     border-color: #4f46e5;
 }
 
-/* Calculator button */
 #calculate-gpa-btn {
     width: 100%;
     padding: 14px;
@@ -442,7 +440,6 @@ tr:hover td {
     transition: 0.3s;
 }
 
-/* Old course-row layout */
 .course-row {
     display: flex;
     gap: 10px;
@@ -464,7 +461,6 @@ tr:hover td {
     justify-content: center;
 }
 
-/* Result area */
 .result-box {
     margin-top: 25px;
     padding: 20px;
@@ -494,9 +490,6 @@ tr:hover td {
     white-space: pre-line;
 }
 
-
-
-/* ---------- Footer ---------- */
 footer {
     background-color: #0f1b3d;
     color: #aab4c8;
@@ -536,7 +529,7 @@ footer strong {
     }
 }
 
-/* ---------- Phones ---------- */
+/* ---------- Mobile Phones ---------- */
 @media (max-width: 650px) {
     .navbar {
         position: static;
