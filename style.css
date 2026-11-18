@@ -20,14 +20,12 @@ a {
     text-decoration: none;
 }
 
-/* ---------- Container ---------- */
 .container {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
 }
 
-/* ---------- Navbar ---------- */
 .navbar {
     background-color: #0f1b3d;
     padding: 15px 0;
